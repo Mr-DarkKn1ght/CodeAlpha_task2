@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="20dp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+<TextView android:text="Study Flashcards" android:textSize="26sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/count" android:text="0 cards" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+<LinearLayout android:orientation="vertical" android:gravity="center" android:padding="24dp" android:background="#F2F3F7" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<TextView android:id="@+id/question" android:text="Question" android:textSize="22sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/answer" android:text="Answer" android:textSize="18sp" android:gravity="center" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+<Button android:id="@+id/showAnswer" android:text="Show Answer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+<Button android:id="@+id/previous" android:text="Previous" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+<Button android:id="@+id/next" android:text="Next" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+</LinearLayout>
+<Button android:id="@+id/manage" android:text="Manage Cards (Add / Edit / Delete)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/logout" android:text="Log out" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
